@@ -3,3 +3,6 @@ release-notes-*
 ShiftIt-*.zip
 ShiftIt/ShiftIt.xcodeproj/*.pbxuser
 ShiftIt/ShiftIt.xcodeproj/*.perspectivev3
+.idea/
+ShiftIt/ShiftIt.xcodeproj/project.xcworkspace/
+ShiftIt/ShiftIt.xcodeproj/xcuserdata/
