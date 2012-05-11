@@ -6,3 +6,4 @@ ShiftIt/ShiftIt.xcodeproj/*.perspectivev3
 .idea/
 ShiftIt/ShiftIt.xcodeproj/project.xcworkspace/
 ShiftIt/ShiftIt.xcodeproj/xcuserdata/
+.DS_Store

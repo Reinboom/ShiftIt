@@ -244,7 +244,7 @@ NSDictionary *allShiftActions = nil;
 
 - (void)updateStatusMenuShortcutForAction_:(ShiftItAction *)action keyCode:(NSInteger)keyCode modifiers:(NSUInteger)modifiers {
 	FMTAssertNotNil(action);
-	FMTDevLog(@"updateStatusMenuShortcutForAction_:%@ keyCode:%d modifiers:%ld", [action identifier], keyCode, modifiers);
+	FMTDevLog(@"updateStatusMenuShortcutForAction_:%@ keyCode:%ld modifiers:%ld", [action identifier], keyCode, modifiers);
 
 	NSMenuItem *menuItem = [statusMenu_ itemWithTag:kSIMenuUITagPrefix+[action uiTag]];
 	FMTAssertNotNil(menuItem);
@@ -324,7 +324,7 @@ NSDictionary *allShiftActions = nil;
 	NSInteger keyCode = [[userInfo objectForKey:kHotKeyKeyCodeKey] integerValue];
 	NSUInteger modifiers = [[userInfo objectForKey:kHotKeyModifiersKey] longValue];
 	
-	FMTDevLog(@"Updating action %@ hotKey: keyCode=%d modifiers=%ld", identifier, keyCode, modifiers);
+	FMTDevLog(@"Updating action %@ hotKey: keyCode=%ld modifiers=%ld", identifier, keyCode, modifiers);
 	
 	ShiftItAction *action = [allShiftActions objectForKey:identifier];
 	FMTAssertNotNil(action);
